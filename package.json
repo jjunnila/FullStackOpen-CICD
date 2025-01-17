@@ -4,6 +4,7 @@
   "description": "Backend for part 2 phonebook",
   "main": "index.js",
   "scripts": {
+    "install-deps": "npm install && cd ./frontend && npm install",
     "start": "node index.js",
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
