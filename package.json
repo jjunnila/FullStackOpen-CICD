@@ -10,7 +10,7 @@
     "build:ui": "@powershell Remove-Item -Recurse -Force dist && cd ./frontend && npm run build && @powershell Copy-Item dist -Recurse ../",
     "build:linux": "rm -rf dist && cd ./frontend/ && npm run build && cp -r dist ../",
     "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push",
-    "lint": "eslint . && cd ./frontend && npm run lint"
+    "lint": "eslint ."
   },
   "author": "Joakim Junnila",
   "license": "ISC",
