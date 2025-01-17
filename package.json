@@ -7,7 +7,7 @@
     "install-deps": "npm install && cd ./frontend && npm install",
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"No tests were specified in phonebook assignment\" && exit 0",
     "build:ui": "@powershell Remove-Item -Recurse -Force dist && cd ./frontend && npm run build && @powershell Copy-Item dist -Recurse ../",
     "build:linux": "rm -rf dist && cd ./frontend/ && npm run build && cp -r dist ../",
     "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push",
